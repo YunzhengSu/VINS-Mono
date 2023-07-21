@@ -1,0 +1,368 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d3244/fast && /usr/bin/make  -f CMakeFiles/cmTC_d3244.dir/build.make CMakeFiles/cmTC_d3244.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d3244.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wshorten64to32  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_d3244.dir/src.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+CMakeFiles/cmTC_d3244.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_d3244.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d3244.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_d3244/fast' failed
+make: *** [cmTC_d3244/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_530bc/fast && /usr/bin/make  -f CMakeFiles/cmTC_530bc.dir/build.make CMakeFiles/cmTC_530bc.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_530bc.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wenumconversion  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror   -Wenum-conversion -o CMakeFiles/cmTC_530bc.dir/src.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wenum-conversion'; did you mean '-Wno-conversion'?
+CMakeFiles/cmTC_530bc.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_530bc.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_530bc.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_530bc/fast' failed
+make: *** [cmTC_530bc/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7edd4/fast && /usr/bin/make  -f CMakeFiles/cmTC_7edd4.dir/build.make CMakeFiles/cmTC_7edd4.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7edd4.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wcpp11extensions  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_7edd4.dir/src.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+CMakeFiles/cmTC_7edd4.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_7edd4.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_7edd4.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_7edd4/fast' failed
+make: *** [cmTC_7edd4/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d4776/fast && /usr/bin/make  -f CMakeFiles/cmTC_d4776.dir/build.make CMakeFiles/cmTC_d4776.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d4776.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_wd981  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd981 -o CMakeFiles/cmTC_d4776.dir/src.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd981'
+CMakeFiles/cmTC_d4776.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_d4776.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d4776.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_d4776/fast' failed
+make: *** [cmTC_d4776/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_60163/fast && /usr/bin/make  -f CMakeFiles/cmTC_60163.dir/build.make CMakeFiles/cmTC_60163.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_60163.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_wd2304  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd2304 -o CMakeFiles/cmTC_60163.dir/src.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd2304'
+CMakeFiles/cmTC_60163.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_60163.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_60163.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_60163/fast' failed
+make: *** [cmTC_60163/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9a137/fast && /usr/bin/make  -f CMakeFiles/cmTC_9a137.dir/build.make CMakeFiles/cmTC_9a137.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9a137.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_STRICTANSI  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -strict-ansi -o CMakeFiles/cmTC_9a137.dir/src.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-strict-ansi'; did you mean '-fstrict-enums'?
+CMakeFiles/cmTC_9a137.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_9a137.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_9a137.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_9a137/fast' failed
+make: *** [cmTC_9a137/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c2279/fast && /usr/bin/make  -f CMakeFiles/cmTC_c2279.dir/build.make CMakeFiles/cmTC_c2279.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c2279.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Qunusedarguments  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -Qunused-arguments -o CMakeFiles/cmTC_c2279.dir/src.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Qunused-arguments'; did you mean '-Wunused-parameter'?
+CMakeFiles/cmTC_c2279.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_c2279.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_c2279.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_c2279/fast' failed
+make: *** [cmTC_c2279/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_75519/fast && /usr/bin/make  -f CMakeFiles/cmTC_75519.dir/build.make CMakeFiles/cmTC_75519.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_75519.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1  -o CMakeFiles/cmTC_75519.dir/CheckSymbolExists.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_75519.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_75519.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_75519.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_75519/fast' failed
+make: *** [cmTC_75519/fast] Error 2
+
+
+File /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_df090/fast && /usr/bin/make  -f CMakeFiles/cmTC_df090.dir/build.make CMakeFiles/cmTC_df090.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_df090.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1  -o CMakeFiles/cmTC_df090.dir/CheckSymbolExists.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_df090.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_df090.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_df090.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_df090/fast' failed
+make: *** [cmTC_df090/fast] Error 2
+
+
+File /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4bf46/fast && /usr/bin/make  -f CMakeFiles/cmTC_4bf46.dir/build.make CMakeFiles/cmTC_4bf46.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4bf46.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1  -o CMakeFiles/cmTC_4bf46.dir/CheckSymbolExists.cxx.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_4bf46.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_4bf46.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_4bf46.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_4bf46/fast' failed
+make: *** [cmTC_4bf46/fast] Error 2
+
+
+File /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -v 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -fpp 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -v 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -fpp 
+
+The output was:
+No such file or directory
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e0dc0/fast && /usr/bin/make  -f CMakeFiles/cmTC_e0dc0.dir/build.make CMakeFiles/cmTC_e0dc0.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0dc0.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e0dc0.dir/src.c.o -c /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e0dc0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0dc0.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e0dc0.dir/src.c.o -o cmTC_e0dc0 
+CMakeFiles/cmTC_e0dc0.dir/src.c.o: In function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+src.c:(.text+0x4a): undefined reference to `pthread_detach'
+src.c:(.text+0x56): undefined reference to `pthread_cancel'
+src.c:(.text+0x67): undefined reference to `pthread_join'
+src.c:(.text+0x7b): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e0dc0.dir/build.make:98: recipe for target 'cmTC_e0dc0' failed
+make[1]: *** [cmTC_e0dc0] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_e0dc0/fast' failed
+make: *** [cmTC_e0dc0/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+#ifdef __QNX__
+#include <unistd.h>
+#endif
+
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_157b0/fast && /usr/bin/make  -f CMakeFiles/cmTC_157b0.dir/build.make CMakeFiles/cmTC_157b0.dir/build
+make[1]: Entering directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_157b0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_157b0.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.21/Modules/CheckFunctionExists.c
+Linking C executable cmTC_157b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_157b0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_157b0.dir/CheckFunctionExists.c.o -o cmTC_157b0  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_157b0.dir/build.make:98: recipe for target 'cmTC_157b0' failed
+make[1]: *** [cmTC_157b0] Error 1
+make[1]: Leaving directory '/home/plusai/repo/third_party/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_157b0/fast' failed
+make: *** [cmTC_157b0/fast] Error 2
+
+
+

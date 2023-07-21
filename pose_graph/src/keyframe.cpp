@@ -88,11 +88,14 @@ void KeyFrame::computeBRIEFPoint()
 {
 	BriefExtractor extractor(BRIEF_PATTERN_FILE.c_str());
 	const int fast_th = 20; // corner detector response threshold
-	if(1)
+	if(1){
+		cout << "KeyFrame::computeBRIEFPoint::FAST" << endl;
 		cv::FAST(image, keypoints, fast_th, true);
+	}
 	else
 	{
 		vector<cv::Point2f> tmp_pts;
+		cout << "KeyFrame::computeBRIEFPoint::goodFeaturesToTrack" << endl;
 		cv::goodFeaturesToTrack(image, tmp_pts, 500, 0.01, 10);
 		for(int i = 0; i < (int)tmp_pts.size(); i++)
 		{

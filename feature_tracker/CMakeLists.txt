@@ -3,7 +3,7 @@ project(feature_tracker)
 
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++11")
-set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -w -g")
 
 find_package(catkin REQUIRED COMPONENTS
     roscpp
@@ -15,6 +15,12 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(OpenCV REQUIRED)
 
+find_package(Ceres REQUIRED)
+include_directories(${CERES_INCLUDE_DIRS})
+# set(CERES_INCLUDE_DIRS "/opt/plusai/external/opt/include")
+set(CERES_INCLUDE_DIRS "/usr/local/include")
+message(WARNING "CERES_INCLUDE_DIRS: " ${CERES_INCLUDE_DIRS})
+
 catkin_package()
 
 include_directories(
@@ -22,10 +28,12 @@ include_directories(
     )
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
-find_package(Eigen3)
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
+message(WARNING ">>>EIGEN3_INCLUDE_DIR: " ${EIGEN3_INCLUDE_DIR})
+
 include_directories(
   ${catkin_INCLUDE_DIRS}
-  ${EIGEN3_INCLUDE_DIR}
 )
 
 add_executable(feature_tracker

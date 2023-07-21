@@ -25,6 +25,22 @@ bool first_image_flag = true;
 double last_image_time = 0;
 bool init_pub = 0;
 
+cv_bridge::CvImagePtr extractImageFromMsg(const sensor_msgs::CompressedImage::ConstPtr& img_msg) {
+    cv_bridge::CvImagePtr cv_ptr;
+    if (img_msg != nullptr) {
+        cv_ptr = cv_bridge::toCvCopy(img_msg, sensor_msgs::image_encodings::BGR8);
+    }
+    return cv_ptr;
+}
+
+sensor_msgs::ImageConstPtr convertCvToMsg(const cv_bridge::CvImagePtr& cv_img){
+    sensor_msgs::ImageConstPtr img_msg_ptr;
+    if(cv_img){
+        img_msg_ptr = cv_img->toImageMsg();
+    }
+    return img_msg_ptr;
+}
+
 void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
 {
     if(first_image_flag)

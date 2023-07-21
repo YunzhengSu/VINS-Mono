@@ -1,0 +1,12 @@
+-I/home/plusai/repo/third_party/eigen
+-I/home/plusai/repo/third_party/eigen/build
+-I/usr/include/qt4
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-I/usr/include/qt4
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-o
+/home/plusai/repo/third_party/eigen/build/demos/opengl/quaternion_demo.moc
+/home/plusai/repo/third_party/eigen/demos/opengl/quaternion_demo.h

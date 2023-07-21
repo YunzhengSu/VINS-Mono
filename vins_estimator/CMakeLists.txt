@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(vins_estimator)
+message(WARNING "===vins_estimator===")
 
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++11")
@@ -20,14 +21,17 @@ find_package(OpenCV REQUIRED)
 # message(WARNING "OpenCV_VERSION: ${OpenCV_VERSION}")
 
 find_package(Ceres REQUIRED)
+set(CERES_INCLUDE_DIRS "/usr/local/include")
 
 include_directories(${catkin_INCLUDE_DIRS} ${CERES_INCLUDE_DIRS})
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
-find_package(Eigen3)
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
+message(WARNING ">>>EIGEN3_INCLUDE_DIR: " ${EIGEN3_INCLUDE_DIR})
+
 include_directories(
   ${catkin_INCLUDE_DIRS}
-  ${EIGEN3_INCLUDE_DIR}
 )
 
 catkin_package()
@@ -50,7 +54,11 @@ add_executable(vins_estimator
     src/initial/initial_ex_rotation.cpp
     )
 
+add_executable(
+  kaist_pub
+  src/data_pub/kaist_pub.cpp
+)
 
 target_link_libraries(vins_estimator ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES}) 
-
+target_link_libraries(kaist_pub ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES}) 
 
