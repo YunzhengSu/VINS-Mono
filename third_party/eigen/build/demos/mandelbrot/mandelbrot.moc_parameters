@@ -1,0 +1,7 @@
+-I/home/plusai/repo/third_party/eigen
+-I/home/plusai/repo/third_party/eigen/build
+-I/usr/include/qt4
+-DNDEBUG
+-o
+/home/plusai/repo/third_party/eigen/build/demos/mandelbrot/mandelbrot.moc
+/home/plusai/repo/third_party/eigen/demos/mandelbrot/mandelbrot.h
