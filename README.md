@@ -1,3 +1,16 @@
+# usage
+## kaist dataset
+
+```
+rosrun vins_estimator kaist_pub /home/<user_name>/Downloads/public_bags/KAIST/urban22/urban22-highway_data/urban22-highway /home/<user_name>/Downloads/public_bags/KAIST/urban22/urban22-highway_img/urban22-highway
+```
+
+```
+roslaunch vins_estimator kaist.launch
+```
+
+---
+
 # VINS-Mono
 ## A Robust and Versatile Monocular Visual-Inertial State Estimator
 
