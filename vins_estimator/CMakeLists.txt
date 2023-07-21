@@ -7,6 +7,42 @@ set(CMAKE_CXX_FLAGS "-std=c++11")
 #-DEIGEN_USE_MKL_ALL")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
+# set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# # plusai cmake module path
+# set(PLUSAI_CMAKE_MODULE_PATH "/opt/plusai/var/cmake/Modules" CACHE PATH "")
+# message(WARNING "PLUSAI_CMAKE_MODULE_PATH: ${PLUSAI_CMAKE_MODULE_PATH}")
+# # cmake module path
+# list(APPEND CMAKE_MODULE_PATH ${PLUSAI_CMAKE_MODULE_PATH})
+# message(STATUS "CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
+
+# # set(PLUSAI_CMAKE_MODULE_PATH "/usr/local/lib/cmake" CACHE PATH "")
+# # # cmake module path
+# # list(APPEND CMAKE_MODULE_PATH ${PLUSAI_CMAKE_MODULE_PATH})
+# # message(WARNING "PLUSAI_CMAKE_MODULE_PATH: ${PLUSAI_CMAKE_MODULE_PATH}")
+# # message(WARNING "CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
+
+# # include plusai_util.cmake
+# include(${PLUSAI_CMAKE_MODULE_PATH}/plusai_util.cmake RESULT_VARIABLE PLUSAI_UTIL_CMAKE)
+# if ("${PLUSAI_UTIL_CMAKE}" STREQUAL "NOTFOUND")
+#     message(FATAL_ERROR "Unable to load plusai util cmake")
+# endif()
+
+# # precompiled thirdparty libaries
+# set(EXTERNAL_LIB_DIR "/opt/plusai/external/opt")
+# if(DEFINED ENV{EXTERNAL_LIB_DIR})
+#     set(EXTERNAL_LIB_DIR "$ENV{EXTERNAL_LIB_DIR}")
+# endif()
+# if(NOT (EXISTS "${EXTERNAL_LIB_DIR}" AND IS_DIRECTORY "${EXTERNAL_LIB_DIR}"))
+#   message(FATAL_ERROR "Unable to locate external lib directory")
+# endif()
+# message(STATUS "EXTERNAL_LIB_DIR: ${EXTERNAL_LIB_DIR}")
+# # add external lib to include and link path
+# include_directories(${EXTERNAL_LIB_DIR}/include)
+# link_directories(${EXTERNAL_LIB_DIR}/lib)
+# # add external lib to CMAKE_PREFIX_PATH
+# list(APPEND CMAKE_PREFIX_PATH ${EXTERNAL_LIB_DIR})
+
 find_package(catkin REQUIRED COMPONENTS
     roscpp
     std_msgs
@@ -29,6 +65,18 @@ set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 find_package(Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIR})
 message(WARNING ">>>EIGEN3_INCLUDE_DIR: " ${EIGEN3_INCLUDE_DIR})
+
+
+# # GFlags
+# find_package(Gflags REQUIRED)
+# message(STATUS "GFLAGS_INCLUDE_DIRS: ${GFLAGS_INCLUDE_DIRS}")
+# message(STATUS "GFLAGS_LIBRARIES: ${GFLAGS_LIBRARIES}")
+
+# # GLog
+# find_package(Glog REQUIRED)
+# include_directories(${GLOG_INCLUDE_DIRS})
+# message(STATUS "GLOG_INCLUDE_DIRS: ${GLOG_INCLUDE_DIRS}")
+# message(STATUS "GLOG_LIBRARIES: ${GLOG_LIBRARIES}")
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
@@ -59,6 +107,20 @@ add_executable(
   src/data_pub/kaist_pub.cpp
 )
 
-target_link_libraries(vins_estimator ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES}) 
-target_link_libraries(kaist_pub ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES}) 
+target_link_libraries(
+  vins_estimator 
+  ${catkin_LIBRARIES} 
+  ${OpenCV_LIBS} 
+  ${CERES_LIBRARIES} 						  
+  # ${GLOG_LIBRARIES} 
+  # ${GFLAGS_LIBRARIES}
+) 
+target_link_libraries(
+  kaist_pub 
+  ${catkin_LIBRARIES} 
+  ${OpenCV_LIBS} 
+  ${CERES_LIBRARIES} 						  
+  # ${GLOG_LIBRARIES} 
+  # ${GFLAGS_LIBRARIES}
+) 
 

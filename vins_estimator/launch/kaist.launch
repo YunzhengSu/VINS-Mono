@@ -22,6 +22,10 @@
         <param name="skip_dis" type="double" value="0" />
     </node>
 
+    <!-- <node name="kaist_pub" pkg="vins_estimator" type="kaist_pub" output="screen" args="/home/plusai/Downloads/public_bags/KAIST/urban19/urban19-highway_data/urban19-highway /home/plusai/Downloads/public_bags/KAIST/urban19/urban19-highway_img/urban19-highway">
+        <args="/home/plusai/Downloads/public_bags/KAIST/urban19/urban19-highway_data/urban19-highway /home/plusai/Downloads/public_bags/KAIST/urban19/urban19-highway_img/urban19-highway">
+    </node> -->
+
     <!-- <node name="compress_to_raw" pkg="image_transport" type="republish" args="compressed in:=/front_left_camera/image_color raw out:=/front_left_camera/image_color"/> -->
 
 </launch>
