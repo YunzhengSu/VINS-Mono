@@ -228,6 +228,9 @@ int main(int argc, char* argv[]) {
             imu_msg.linear_acceleration.y = std::stod(line_data_vec[12]);
             imu_msg.linear_acceleration.z = std::stod(line_data_vec[13]);
             imu_publisher.publish(imu_msg);
+            ROS_INFO("imu timestamp: %f, imu msg.acc.z: %f",timestamp, imu_msg.linear_acceleration.z);
+            auto imu_body_acc = Eigen::Vector3d(imu_msg.linear_acceleration.x, imu_msg.linear_acceleration.y,imu_msg.linear_acceleration.z);
+            ROS_INFO("imu acc norm: %f", imu_body_acc.norm());
             usleep(10000 * nDelayTimes);  // usleep 1e-6, 5000*2 = 10000为10ms, 100hz
         }
     }
