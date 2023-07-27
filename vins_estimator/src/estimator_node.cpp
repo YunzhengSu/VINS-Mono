@@ -143,7 +143,9 @@ void imu_callback(const sensor_msgs::ImuConstPtr &imu_msg)
         return;
     }
     last_imu_t = imu_msg->header.stamp.toSec();
-
+    thread_local static Eigen::Vector3d tmp_acc;
+    tmp_acc = Eigen::Vector3d(imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y, imu_msg->linear_acceleration.z);
+    // ROS_INFO("imu norm: %f, acc.z: %f", tmp_acc.norm(), imu_msg->linear_acceleration.z);
     m_buf.lock();
     imu_buf.push(imu_msg);
     m_buf.unlock();

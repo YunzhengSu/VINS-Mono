@@ -22,4 +22,5 @@
 
     <node name="compress_to_raw" pkg="image_transport" type="republish" args="compressed in:=/front_left_camera/image_color raw out:=/front_left_camera/image_color"/>
 
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find vins_estimator)/../config/plusai_rviz_config.rviz" />
 </launch>
